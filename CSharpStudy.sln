@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Field", "ConsoleApp1\Field.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructor", "Constructor\Constructor.csproj", "{0B4C0812-16FD-4284-8D7C-A6CFD6381855}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodParameter", "MethodParameter\MethodParameter.csproj", "{AEF7967C-29B9-41A2-9781-F69B08BBDDFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0B4C0812-16FD-4284-8D7C-A6CFD6381855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B4C0812-16FD-4284-8D7C-A6CFD6381855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B4C0812-16FD-4284-8D7C-A6CFD6381855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF7967C-29B9-41A2-9781-F69B08BBDDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF7967C-29B9-41A2-9781-F69B08BBDDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF7967C-29B9-41A2-9781-F69B08BBDDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF7967C-29B9-41A2-9781-F69B08BBDDFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
