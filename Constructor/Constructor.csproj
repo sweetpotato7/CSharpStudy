@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2984517-1564-4320-8404-95D3DD447780}</ProjectGuid>
+    <ProjectGuid>{0B4C0812-16FD-4284-8D7C-A6CFD6381855}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSharpStudy</RootNamespace>
-    <AssemblyName>CSharpStudy</AssemblyName>
+    <RootNamespace>Constructor</RootNamespace>
+    <AssemblyName>Constructor</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Field\Field.cs" />
-    <Compile Include="Object\ClassOne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Constructor\Constructor.txt" />
-    <Content Include="Field\Field.txt" />
-    <Content Include="Object\Object.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
