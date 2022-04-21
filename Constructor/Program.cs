@@ -19,6 +19,7 @@ namespace Constructor
         public Car(string name)
         {
             _name = name; // 2. 필드 = 매개변수
+            Console.WriteLine(_name);
         }
     }
     class Program
