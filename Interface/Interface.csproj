@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2984517-1564-4320-8404-95D3DD447780}</ProjectGuid>
+    <ProjectGuid>{937628B9-A03F-4A60-8C74-9BFCC67303CC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSharpStudy</RootNamespace>
-    <AssemblyName>CSharpStudy</AssemblyName>
+    <RootNamespace>Interface</RootNamespace>
+    <AssemblyName>Interface</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,25 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Field\Field.cs" />
-    <Compile Include="Object\ClassOne.cs" />
+    <Compile Include="InterfaceDescription.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Constructor\Constructor.txt" />
-    <Content Include="Delegate\Delegate.txt" />
-    <Content Include="Event\Event.txt" />
-    <Content Include="Field\Field.txt" />
-    <Content Include="Interface\Interface.txt" />
-    <Content Include="MethodParameter\MethodParameter.txt" />
-    <Content Include="Object\Object.txt" />
-    <Content Include="Override\Override.txt" />
-    <Content Include="Property\Property.txt" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
