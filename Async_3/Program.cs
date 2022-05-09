@@ -8,7 +8,7 @@ namespace Async_3
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             // 응용프로그램이 시작됨
             // 시간이 좀 걸리는 작업을 시작
@@ -17,22 +17,31 @@ namespace Async_3
 
             Console.WriteLine("응용 프로그램이 시작됨"); // 1. 실행
 
-            var task = new Task(DoTasking); // 2. 새로운 Task 실행하겠다 선언만 하고 DoTasking 메서드가 시작되지는 않음.
-            task.Start(); // 3. DoTasking 메서드에 진입
-            task.Wait(); // 4. DoTasking 메서드를 시작할 즈음에 Wait가 실행됨
+            //var task = new Task(DoTasking); // 2. 새로운 Task 실행하겠다 선언만 하고 DoTasking 메서드가 시작되지는 않음.
+            //task.Start(); // 3. DoTasking 메서드에 진입
+            //task.Wait(); // 4. DoTasking 메서드를 시작할 즈음에 Wait가 실행됨
+            
+            await DoTasking();
+            //Console.WriteLine(res);
+            
+            //DoTasking();
             // Wait는 DoTasking 메서드가 끝나기 전에 다음으로 넘어가지 못하게 해줌.
 
-            Console.ReadLine();
+            //Console.ReadLine();
+            //int a = 1;
+            //Console.WriteLine(a+1);
         }
 
-        static async void DoTasking()
+        static async Task DoTasking()
         {
             var task = Task.Run(() => DelayedTask()); // 5. 시작
 
             Console.WriteLine("작업이 진행중입니다."); // 7. 비동기 이기 때문에 위 메서드가 끝나기 전에 실행 됨.
 
             var res = await task; // 8. 5번에서 task 변수에 DelayedTask() 메서드의 반환값이 담길 때 까지 기다려준다.
+
             Console.WriteLine($"반환값: {res}"); // 11. 값을 반환 받았기 때문에 실행
+            //return res;
         }
 
         static string DelayedTask()
